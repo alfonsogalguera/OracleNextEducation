@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular los puntos del equipo de futbol</h1>
+</body>
+<script>
+    function saltarLinea(){
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+    var numeroPensado = Math.round(Math.random()*10);
+    var numeroLanzado = parseInt(prompt("Digite un numero de 0-10"));
+
+    if(numeroPensado == numeroLanzado){
+        imprimir("Usted acerto el numero.")
+    }else{
+        imprimir("No acerto el numero, el numero era: "+ numeroPensado);
+    }
+
+</script>
+</html>
